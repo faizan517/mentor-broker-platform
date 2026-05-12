@@ -57,7 +57,7 @@ export default function CustomerDashboard() {
           title="Expiring Soon"
           value={myPolicies.filter((p) => p.status === 'expiring-soon').length}
           icon={AlertCircle}
-          color="orange"
+          color="amber"
         />
       </div>
 

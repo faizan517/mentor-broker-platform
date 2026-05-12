@@ -1,5 +1,5 @@
 import { create } from 'zustand';
-import { DexaMessage } from '@types/index';
+import { DexaMessage } from '@types';
 
 interface DexaState {
   messages: DexaMessage[];

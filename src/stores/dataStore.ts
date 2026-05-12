@@ -7,7 +7,7 @@ import {
   Lead,
   Renewal,
   Quote,
-} from '@types/index';
+} from '@types';
 import { initializeAllData } from '@data/generators';
 
 interface DataState {

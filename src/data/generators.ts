@@ -7,7 +7,7 @@ import {
   Quote,
   Coverage,
   ClaimTimeline,
-} from '@types/index';
+} from '@types';
 
 const FIRST_NAMES = [
   'Sarah', 'John', 'Michael', 'Emily', 'David', 'Jessica', 'Robert', 'Amanda',

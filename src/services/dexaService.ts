@@ -1,4 +1,4 @@
-import { DexaSuggestedAction } from '@types/index';
+import { DexaSuggestedAction } from '@types';
 
 interface DexaResponse {
   message: string;
