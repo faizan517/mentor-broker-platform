@@ -72,8 +72,17 @@ export default function CustomerDashboard() {
               className="w-full px-4 py-3 border border-primary-200 dark:border-primary-800 hover:bg-primary-50 dark:hover:bg-primary-950 rounded-lg text-left text-neutral-900 dark:text-white font-medium transition-colors flex items-center gap-2"
             >
               <Plus className="w-4 h-4 text-primary-600" />
-              Request a Quote
+              Request Personal Quote
             </button>
+            {myCustomer?.businessType === 'business' && (
+              <button
+                onClick={() => navigate('/customer-portal/commercial-gl')}
+                className="w-full px-4 py-3 border border-green-200 dark:border-green-800 hover:bg-green-50 dark:hover:bg-green-950 rounded-lg text-left text-neutral-900 dark:text-white font-medium transition-colors flex items-center gap-2"
+              >
+                <Plus className="w-4 h-4 text-green-600" />
+                Get Commercial GL Quote
+              </button>
+            )}
             <button
               onClick={() => navigate('/customer-portal/claims')}
               className="w-full px-4 py-3 border border-neutral-200 dark:border-neutral-700 hover:bg-neutral-50 dark:hover:bg-neutral-700 rounded-lg text-left text-neutral-900 dark:text-white font-medium transition-colors flex items-center gap-2"

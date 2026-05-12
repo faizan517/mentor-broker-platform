@@ -150,6 +150,48 @@ const DEXA_RESPONSES: Record<string, Record<string, DexaResponse>> = {
       ],
     },
   },
+  'commercial-gl': {
+    'default': {
+      message:
+        'Welcome to Commercial General Liability quotes. I\'ll help you find the best coverage for your business. Let\'s start with your company details.',
+      suggestedActions: [
+        { label: 'View Coverage Options', action: 'coverage:details' },
+        { label: 'Risk Assessment Guide', action: 'risk:guide' },
+      ],
+    },
+    'business-info': {
+      message:
+        'Great! I\'ve noted your business details. For a construction business with 10 employees, I\'d recommend focusing on strong GL limits and property coverage. Let\'s select your coverage options.',
+      suggestedActions: [
+        { label: 'Recommend Coverage', action: 'coverage:recommend' },
+        { label: 'View Limits', action: 'coverage:limits' },
+      ],
+    },
+    'coverage': {
+      message:
+        'Excellent coverage choices. With $2M GL and property coverage, plus cyber add-on, you\'ll have comprehensive protection. Now let\'s assess your risk profile.',
+      suggestedActions: [
+        { label: 'Risk Assessment', action: 'risk:start' },
+        { label: 'Review Coverage', action: 'coverage:review' },
+      ],
+    },
+    'risk': {
+      message:
+        'Your claims history and safety program are strong factors. Based on your profile, you\'re looking at competitive rates. Ready to see quotes from top commercial carriers?',
+      suggestedActions: [
+        { label: 'Generate Quotes', action: 'quotes:generate' },
+        { label: 'Modify Risk', action: 'risk:modify' },
+      ],
+    },
+    'comparison': {
+      message:
+        'You\'ve got quotes from Chubb, Liberty Mutual, Hartford, and Travelers. Based on your risk score, Chubb and Liberty offer the best value. Ready to submit?',
+      suggestedActions: [
+        { label: 'Submit Quote', action: 'quote:submit' },
+        { label: 'Compare Details', action: 'quote:compare' },
+      ],
+    },
+  },
   default: {
     default: {
       message:
